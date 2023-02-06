@@ -35,7 +35,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.2.4
       - name: Thank Contributor for Landing PRs
-        uses: davidtaing/thank-contribution@0.0.0
+        uses: davidtaing/thank-contribution@0.0.1
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
 ```
