@@ -1,7 +1,5 @@
 # thank-for-landing-pr-action
 
-[![Thank for Landing PR](https://github.com/davidtaing/thank-for-landing-pr-action/actions/workflows/thank-for-landing.yml/badge.svg)](https://github.com/davidtaing/thank-for-landing-pr-action/actions/workflows/thank-for-landing.yml)
-
 Fun GitHub Action that thanks a Contributor for Landing a Pull Request by leaving a comment.
 
 ## Permissions Required
@@ -37,7 +35,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.2.4
       - name: Thank Contributor for Landing PRs
-        uses: davidtaing/thank-contribution@v0.0.0
+        uses: davidtaing/thank-contribution@0.0.0
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
 ```
