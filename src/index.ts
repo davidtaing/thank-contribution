@@ -6,7 +6,8 @@ async function run() {
 
   const octokit = github.getOctokit(GITHUB_TOKEN);
   const context = github.context;
-  const MESSAGE = `Congratulations ${context.issue.owner} for landing this pull request!`;
+  const MESSAGE = `Thank you ${context.issue.owner},
+  Congratulations for landing this pull request!`;
 
   octokit.rest.issues.createComment({
     ...context.repo,
