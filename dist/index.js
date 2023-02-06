@@ -9836,7 +9836,8 @@ function run() {
         const GITHUB_TOKEN = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("repo-token", { required: true });
         const octokit = _actions_github__WEBPACK_IMPORTED_MODULE_1__.getOctokit(GITHUB_TOKEN);
         const context = _actions_github__WEBPACK_IMPORTED_MODULE_1__.context;
-        const MESSAGE = `Congratulations ${context.issue.owner} for landing this pull request!`;
+        const MESSAGE = `Thank you ${context.issue.owner},
+  Congratulations for landing this pull request!`;
         octokit.rest.issues.createComment(Object.assign(Object.assign({}, context.repo), { issue_number: context.issue.number, body: MESSAGE }));
     });
 }
