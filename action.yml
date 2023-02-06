@@ -1,5 +1,5 @@
-name: "Thank Contributor for Landing PRs"
-description: "Thanks a Contributor for Landing a Pull Request."
+name: "Thank Contribution"
+description: "Thanks constributors by commenting on their pull requests."
 inputs:
   repo-token:
     description: "GITHUB_TOKEN"
