@@ -1,0 +1,12 @@
+name: "Thank Contributor for Landing PRs"
+description: "Thanks a Contributor for Landing a Pull Request."
+inputs:
+  repo-token:
+    description: "GITHUB_TOKEN"
+    required: true
+runs:
+  using: "node16"
+  main: "dist/index.js"
+branding:
+  icon: "message-square"
+  color: "blue"
