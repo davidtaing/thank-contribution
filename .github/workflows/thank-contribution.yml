@@ -1,0 +1,19 @@
+name: "Thank Contribution"
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  thank_for_landing:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-22.04
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.4
+      - name: Thank Contributor for Landing PRs
+        uses: davidtaing/thank-contribution@v0.0.0
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
